@@ -24,7 +24,7 @@ requirements:
     - python
     - setuptools
     - toolchain
-    - numpy x.x
+    - numpy 1.11.*
     - msinttypes  # [win]
     - jpeg 9.*
     - libpng >=1.6.28,<1.7
@@ -34,7 +34,7 @@ requirements:
 
   run:
     - python
-    - numpy x.x
+    - numpy >=1.11
     - jpeg 9.*
     - libpng >=1.6.28,<1.7
     - libwebp 0.5.*
