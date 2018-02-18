@@ -24,22 +24,22 @@ requirements:
     - python
     - setuptools
     - toolchain
-    - numpy 1.11.*
+    - numpy 1.11*
     - msinttypes  # [win]
-    - jpeg 9.*
-    - libpng >=1.6.28,<1.7
+    - jpeg 9*
+    - libpng >=1.6.32,<1.6.35
     - libwebp 0.5.*
-    - libtiff 4.0.*
-    - zlib 1.2.*  # [win]
+    - libtiff >=4.0.8,<4.0.10
+    - zlib 1.2.11  # [win]
 
   run:
     - python
     - numpy >=1.11
-    - jpeg 9.*
-    - libpng >=1.6.28,<1.7
+    - jpeg 9*
+    - libpng >=1.6.32,<1.6.35
     - libwebp 0.5.*
-    - libtiff 4.0.*
-    - zlib 1.2.*  # [win]
+    - libtiff >=4.0.8,<4.0.10
+    - zlib 1.2.11  # [win]
 
 test:
   imports:
