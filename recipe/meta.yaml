@@ -21,25 +21,27 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
     - setuptools
-    - toolchain
-    - numpy 1.11*
+    - numpy
     - msinttypes  # [win]
-    - jpeg 9*
-    - libpng >=1.6.32,<1.6.35
-    - libwebp 0.5.*
-    - libtiff >=4.0.8,<4.0.10
-    - zlib 1.2.11  # [win]
+    - jpeg
+    - libpng
+    - libwebp
+    - libtiff
+    - zlib         # [win]
 
   run:
     - python
-    - numpy >=1.11
-    - jpeg 9*
-    - libpng >=1.6.32,<1.6.35
-    - libwebp 0.5.*
-    - libtiff >=4.0.8,<4.0.10
-    - zlib 1.2.11  # [win]
+    - {{ pin_compatible('numpy') }}
+    - jpeg
+    - libpng
+    - libwebp
+    - libtiff
+    - zlib         # [win]
 
 test:
   imports:
