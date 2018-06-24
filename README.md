@@ -14,14 +14,16 @@ Mahotas-imread is a simple module to read images into numpy arrays.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/imread-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/imread-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/imread-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/imread-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/imread-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/imread-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/imread-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/imread-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/imread-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/imread-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/imread-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/imread-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imread/badges/version.svg)](https://anaconda.org/conda-forge/imread)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imread/badges/downloads.svg)](https://anaconda.org/conda-forge/imread)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-imread-green.svg)](https://anaconda.org/conda-forge/imread) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/imread.svg)](https://anaconda.org/conda-forge/imread) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/imread.svg)](https://anaconda.org/conda-forge/imread) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/imread.svg)](https://anaconda.org/conda-forge/imread) |
 
 Installing imread
 =================
