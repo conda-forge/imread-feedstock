@@ -1,5 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
+build_number_decrement:
+- '1000'
 c_compiler:
 - toolchain_c
 channel_sources:
@@ -15,7 +17,7 @@ libpng:
 libtiff:
 - 4.0.9
 libwebp:
-- '0.5'
+- 1.0.0
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
@@ -35,4 +37,10 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- '3.5'
+- '2.7'
+zip_keys:
+- - c_compiler
+  - cxx_compiler
+  - channel_sources
+  - channel_targets
+  - build_number_decrement
