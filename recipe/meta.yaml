@@ -1,6 +1,6 @@
 {% set name = "imread" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "5efc90a124d2fbf451afc89850127842eb87ff12942733d77605d2687c756079" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "c343b546ab54acdb50dbe69d6793d64ead3ba6d585022f5a7ad4687b7f3db79b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   script:
     - cp %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib  # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
