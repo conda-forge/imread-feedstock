@@ -9,7 +9,7 @@ source:
   sha256: c343b546ab54acdb50dbe69d6793d64ead3ba6d585022f5a7ad4687b7f3db79b
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win and vc<14]
   script:
     - cp %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib  # [win]
