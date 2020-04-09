@@ -1,4 +1,4 @@
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: imread
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imread/imread-{{ version }}.tar.gz
-  sha256: c9f1b379b3d5f144fc71982640db0b876929851c3542a11a429e440023a4f15b
+  sha256: 0ff793efa5417dc6a47a261838fc97fb663c2d542cb2e3d9a4270c90015edc15
 
 build:
   number: 0
