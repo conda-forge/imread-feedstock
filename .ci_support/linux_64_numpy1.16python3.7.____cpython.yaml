@@ -1,11 +1,19 @@
 c_compiler:
-- vs2017
+- gcc
+c_compiler_version:
+- '9'
+cdt_name:
+- cos6
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- gxx
+cxx_compiler_version:
+- '9'
+docker_image:
+- quay.io/condaforge/linux-anvil-comp7
 jpeg:
 - '9'
 libpng:
@@ -13,9 +21,9 @@ libpng:
 libtiff:
 - 4.1.0
 libwebp:
-- '1.0'
+- '1.1'
 numpy:
-- '1.14'
+- '1.16'
 pin_run_as_build:
   jpeg:
     max_pin: x
@@ -23,16 +31,17 @@ pin_run_as_build:
     max_pin: x.x
   libtiff:
     max_pin: x
-  libwebp:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
-  zlib:
-    max_pin: x.x
 python:
 - 3.7.* *_cpython
-vc:
-- '14'
-zlib:
-- '1.2'
+target_platform:
+- linux-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
+- - cdt_name
+  - docker_image
+- - python
+  - numpy
