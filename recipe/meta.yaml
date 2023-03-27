@@ -9,10 +9,9 @@ source:
   sha256: 0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f
 
 build:
-  number: 0
-  skip: true  # [win and vc<14]
+  number: 1
   script:
-    - cp %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib  # [win]
+    - copy /y %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib      # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
     - python setup.py install --single-version-externally-managed --record record.txt
     - del %LIBRARY_LIB%\png.lib  # [win]
@@ -35,10 +34,6 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - jpeg
-    - libpng
-    - libwebp
-    - libtiff
-    - zlib         # [win]
 
 test:
   imports:
