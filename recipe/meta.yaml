@@ -11,7 +11,7 @@ source:
 build:
   number: 1
   script:
-    - cp %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib  # [win]
+    - copy /y %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib      # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
     - python setup.py install --single-version-externally-managed --record record.txt
     - del %LIBRARY_LIB%\png.lib  # [win]
