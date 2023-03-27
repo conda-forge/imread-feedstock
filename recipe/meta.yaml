@@ -9,7 +9,7 @@ source:
   sha256: 0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f
 
 build:
-  number: 1
+  number: 2
   script:
     - copy /y %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib      # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
@@ -25,7 +25,7 @@ requirements:
     - pip
     - numpy
     - msinttypes  # [win]
-    - jpeg
+    - libjpeg-turbo
     - libpng
     - libwebp
     - libtiff
@@ -33,7 +33,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - jpeg
+    - libjpeg-turbo
 
 test:
   imports:
