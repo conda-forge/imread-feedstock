@@ -10,7 +10,6 @@ source:
 
 build:
   number: 1
-  skip: true  # [win and vc<14]
   script:
     - cp %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib  # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
@@ -35,10 +34,6 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - jpeg
-    - libpng
-    - libwebp
-    - libtiff
-    - zlib         # [win]
 
 test:
   imports:
