@@ -1,4 +1,4 @@
-{% set version = "0.7.4" %}
+{% set version = "0.7.5" %}
 
 package:
   name: imread
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/imread/imread-{{ version }}.tar.gz
-  sha256: 0487adef11a22168700968c1727020361a72f6132b6ced2b8826b02d8cbf744f
+  sha256: 1a25a9035dbc1ae2e56c15b50904071d555ea197eef58ca1d9117349db470db7
 
 build:
-  number: 6
+  number: 0
   script:
     - copy /y %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib      # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
