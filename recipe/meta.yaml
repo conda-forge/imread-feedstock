@@ -9,7 +9,7 @@ source:
   sha256: 50b3d7089c862504c22b256ef51fe45851b34616db14c0ebfc5536001c996015
 
 build:
-  number: 0
+  number: 1
   script:
     - copy /y %LIBRARY_LIB%\libpng.lib %LIBRARY_LIB%\png.lib      # [win]
     - python setup.py build_ext --include-dirs=${PREFIX}/include  # [unix]
@@ -33,7 +33,6 @@ requirements:
     - zlib         # [win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - libjpeg-turbo
 
 test:
